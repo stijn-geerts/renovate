@@ -7,7 +7,7 @@
     "* * * * *"
   ],
   "timezone": "GMT",
-  "prConcurrentLimit": 3,
+  "prConcurrentLimit": 4,
   "packageRules": [
     {
       "matchUpdateTypes": ["patch", "pin", "digest"],
