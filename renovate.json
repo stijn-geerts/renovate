@@ -2,22 +2,5 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
-  ],
-  "schedule": [
-    "* * * * *"
-  ],
-  "timezone": "GMT",
-  "prConcurrentLimit": 4,
-  "packageRules": [
-    {
-      "matchUpdateTypes": ["patch", "pin", "digest"],
-      "automerge": true,
-      "automergeType": "pr-comment",
-      "automergeComment": "bors: r+"
-    },
-    {
-      "matchUpdateTypes": ["major", "minor"],
-      "automerge": false
-    }
   ]
 }
