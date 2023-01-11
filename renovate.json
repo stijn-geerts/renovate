@@ -8,8 +8,7 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["minor"],
-      "automerge": true,
-      "automergeType" : "pr-comment"
+      "automerge": true
     },
     {
       "matchUpdateTypes": ["major"],
