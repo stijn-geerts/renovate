@@ -14,5 +14,9 @@
       "automerge": false
     }
   ],
-  "prConcurrentLimit": 3
+  "prConcurrentLimit": 3,
+  "schedule": [
+    "after 10pm",
+    "before 5am"
+  ]
 }
