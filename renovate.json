@@ -1,7 +1,20 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:base",
+    "pr"
   ],
-  "assignees": ["stijn-geerts"]
+  "assignees": ["stijn-geerts"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor"],
+      "automerge": true,
+      "automergeType" : "pr-comment"
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "automerge": false
+    }
+  ],
+  "prConcurrentLimit": 3
 }
